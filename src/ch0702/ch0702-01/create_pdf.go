@@ -3,7 +3,8 @@ package main
 import "github.com/jung-kurt/gofpdf"
 
 func main() {
-	err := GeneratePdf("hello.pdf")
+	filePath := "F:\\100-work\\01-code\\go\\src\\lagouGoLangStudy\\src\\ch0702\\ch0702-01\\hello.pdf"
+	err := GeneratePdf(filePath)
 	if err != nil {
 		panic(err)
 	}
